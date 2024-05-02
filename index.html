@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- /*TITULO DE PESTAÑA*/ -->
+    <title>RityJust</title>
+    <link rel="shortcut icon" href="./Img/Logos/rityJust.jpg">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- /*LINKEO DE CSS*/ -->
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <link rel="stylesheet" type="text/css" href="./css/Carrousel.css">
+    <link rel="stylesheet" type="text/css" href="./css/popUp.css">
+    <link rel="stylesheet" type="text/css" href="./css/Carrito.css">
+    <link rel="stylesheet" type="text/css" href="./css/productosycarritos.css">
+
+    <!-- TOASTIFY CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    
+    <!-- /* LINKEO DE JS  -->
+    <script  defer src="./js/admin.js"></script>
+    <script  defer src="./js/productos.js"></script>
+    <script defer src="./js/ofertas.js"></script>
+
+    <!-- SWEET ALERT -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+     <!-- TOASTIFY JS -->
+     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    
+    
+
+
+</head>
+<body>
+    <!-- ENCABEZADO*/ -->
+    <header class="sticky-header" >
+        <!-- /*PARTE IZQUIERDA*/ --> 
+        <div class="logo">
+            <img src="./Img/Logos/rityJust.jpg">    
+        </div>  
+        
+        <!-- /*PARTE CENTRAL*/ -->
+        <h1 class="titulo">RITY JUST</h1>
+        
+        <!-- /*PARTE DERECHA*/ -->
+        <div class="right-header">
+            <a href="./admin.html"  class="opcion" id="btnAdmin"><i class="bi bi-code-square"></i>Modo Admin</a>
+            <div class="opcion admin" id="btnUser"><i class="bi bi-person-circle"></i>Modo User</div>
+            <a href="./carrito.html" class="opcion" id="btnCarrito"><i class="bi bi-cart-fill"></i> Carrito</a>
+        </div>
+    
+
+    <div id="cart" class="cart">
+        <span id="closeCart" class="close-cart">x</span>
+        <h2>MI COMPRA</h2>
+        <ul id="cartItems" class="cart-items">
+            <!-- Los productos del carrito se añadirán aquí con JavaScript -->
+        </ul>
+    </div>
+            
+        
+    </header>
+
+    <!-- /*contenido principal*/ -->
+    <main>
+        <!-- /*menu de navegacion*/ -->
+        <nav class="nav-links">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#offers">Offers</a></li>
+                <li><a href="#questions">Questions</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Seccion de ofertas*/ -->
+        <section id="offers">
+            <h2 class="subtitulo">OFERTAS</h2>
+            <div class="ofertas-carrusel" id="ofertas-DOM">
+               
+                <!--AGREGAR OFERTAS CON JS-->
+                
+            </div>
+        </section>
+
+        
+        <!-- seccion de muestro de productos -->
+        <section class="wrapper">
+            <!-- menu lateral -->
+            <aside>
+                <button class="close-menu" id="close-menu">
+                    <i class="bi bi-x"></i>
+                </button>
+                
+                <nav>
+                    <h3 class="subtitulo product-title">categorias</h3>
+                    <ul class="menu">
+                        <li>
+                            <button id="todos" class="boton-menu boton-categoria active"><i class="bi bi-hand-index-thumb-fill"></i> Todos los productos</button>
+                        </li>
+                        <li>
+                            <button id="frecuente" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> BOTIQUIN NATURAL</button>
+                        </li>
+                        <li>
+                            <button id="fisico" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> CUIDADO DEL CUERPO</button>
+                        </li>
+                        <li>
+                            <button id="aromaterapia" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i>AROMATERAPIA</button>
+                        </li>
+                        <li>
+                            <a class="boton-menu boton-carrito" href="./carrito.html" ">
+                                <i class="bi bi-cart-fill"></i> Carrito <span id="numerito" class="numerito">0</span>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                    
+                    
+                </nav>
+                
+            </aside>
+            <!-- contendor de productos -->
+            <section class="muestraProductos">
+                <h2 class="titulo-principal" id="titulo-principal">Todos los productos</h2>
+                <div id="contenedor-productos" class="contenedor-productos">
+                    <!-- Esto se va a rellenar con JS -->
+                </div>
+            </section class="muestraProductos">
+
+            
+        </section>
+        <!-- 
+         <!-- /*Seccion de preguntas*/ EN PROCESO
+        <section id="questions">Questions Content</section>
+        
+        <!-- /*Seccion de contacto*/ EN PROCESO
+        <section id="contact">Contact Content</section> -->
+    </main>
+
+    <!-- /* PIE DE PAGINA */ -->
+    <footer>
+        <p>© 2024 RityJust. All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>
+
+

@@ -1,0 +1,48 @@
+ /* Carrousel */
+ .ofertas-carrusel{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    height: 40vh;
+    gap: 2.5rem;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .oferCheck {
+    width: 30rem;  
+ }
+
+
+    /* Product carousel styles */
+    .product-section {
+        text-align: right;
+        padding: 10px;
+        background-color: var(--clr-main);
+        display: flex;
+        justify-content: space-between;
+        height: 5rem;
+
+    }
+
+ 
+
+  
+
+    /* Boton de compra */
+
+    .add-to-cart {
+        background-color: #40E0D0;
+        color: white;
+        border: none;
+        padding: 8px 12px;
+        margin-top: 5px;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 50%; /* Occupies 50% of the card width */
+        transition: background-color 0.3s;
+    }
+
+    .add-to-cart:hover {
+        background-color: #21203f;
+    }
